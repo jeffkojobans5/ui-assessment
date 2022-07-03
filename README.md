@@ -2,8 +2,8 @@
 React.js
 
 # Main Dependencies
-React Router DOM
-Styled Components
+1. React Router DOM
+2. Styled Components
 
 # Description
 1. In the components folder you will find all the components I used eg. Header, Footer, Banner etc. I did this to make the codes easier to maintain.
