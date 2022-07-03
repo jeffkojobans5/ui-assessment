@@ -95,14 +95,25 @@ const Wrapper = styled.div`
             display: none;
         }
 
+        .sale {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;            
+        }
         .sale p {
             font-size: .8rem;
-            overflow-x: scroll;
+            overflow: hidden;
             white-space: nowrap;
         }
+
         .chat {
-            padding: 0 0 0 1rem;
+            padding-left: 1rem;
         }
+
+        .lang {
+            padding: 0 .5rem 0 .5rem;
+        }
+
     }
 
 `

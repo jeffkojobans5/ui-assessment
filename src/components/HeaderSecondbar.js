@@ -281,6 +281,7 @@ const Wrapper = styled.div`
         justify-content: center;
         align-items: center;   
         gap: 5px;     
+        padding-right: .5rem;
     }
 
     .empty {

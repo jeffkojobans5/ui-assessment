@@ -23,6 +23,7 @@ function CountryLeague () {
                 })}
                 </div>
             </div>
+            <div className="clear"></div>
         </Wrapper>
     )
 }
@@ -30,11 +31,9 @@ function CountryLeague () {
 const Wrapper = styled.div`
     font-family: 'Montserrat', sans-serif;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 
     .container {
-        width: 100%;
-
         h1 {
             margin-bottom: 4rem;
             text-transform: uppercase;
@@ -42,20 +41,17 @@ const Wrapper = styled.div`
     }
 
     .country-league {
-        display: flex;      
-        gap: 20px; 
+        display: block;
+        width: 100%;
+    }
+
+    .clear {
+        clear: both;
     }
 
     @media only screen and (max-width: 720px) {
         .container h1 {
            font-size: 1.5rem
-        }
-
-
-        .country-league {
-            // display: grid;
-            // grid-gap: 20px;
-            // grid-template-columns: auto auto;
         }
     }          
 `

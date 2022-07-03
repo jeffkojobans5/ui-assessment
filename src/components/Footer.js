@@ -231,6 +231,10 @@ const Wrapper = styled.div`
         margin-top: 1.5rem;
         border-top: 1px solid #EAEAEC;        
     }
+
+    li , {
+        font-size: .9rem;
+    }
 }  
 }     
 `

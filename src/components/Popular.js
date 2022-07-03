@@ -87,7 +87,7 @@ const Wrapper = styled.div`
         margin-top: 1rem !important;
 
         .text h1 {
-            font-size: 1.5rem            
+            font-size: 1.3rem            
         }
 
         .text-slider-controller {

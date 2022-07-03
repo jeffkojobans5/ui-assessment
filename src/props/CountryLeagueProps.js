@@ -18,7 +18,9 @@ function CountryLeagueProps ( props ) {
 
 const Wrapper = styled.div`
     transition: 0.3s all;
-    flex: 1;
+    width: 20%;
+    padding: 0.5rem;
+    float: left;
 
     a {
         text-decoration: none;
@@ -31,11 +33,18 @@ const Wrapper = styled.div`
         margin-top: 1rem;
     }
 
+    img {
+        height: auto;
+        max-width: 100%
+    }
 
     :hover {
         transform: translateY(-10px)
     }
 
+    @media only screen and (max-width: 720px) {
+        width: 50%;
+    }
 `
 
 export default CountryLeagueProps
