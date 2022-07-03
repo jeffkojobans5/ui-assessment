@@ -5,8 +5,8 @@ body , html , * {
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
+html , body {
+  overflow-x: hidden !important;
 }
 
 .container {
@@ -19,4 +19,14 @@ html {
   max-width: 70%;
   margin: 0 auto;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+    .prod-container {
+      max-width: 100%;
+    }  
+
+    .banner-desktop {
+      display: none;
+    }
 }

@@ -44,7 +44,19 @@ const Wrapper = styled.div`
     .country-league {
         display: flex;      
         gap: 20px; 
-
     }
+
+    @media only screen and (max-width: 720px) {
+        .container h1 {
+           font-size: 1.5rem
+        }
+
+
+        .country-league {
+            // display: grid;
+            // grid-gap: 20px;
+            // grid-template-columns: auto auto;
+        }
+    }          
 `
 export default CountryLeague

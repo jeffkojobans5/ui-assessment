@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { navLinks } from "../utils/constant"
 
 // assets
-import {  Down  , Search , Cart , User } from './assets';
+import {  Down  , Search , Cart , User  } from './assets';
 
 function HeaderSecondbar  () {
     return (
@@ -56,12 +56,40 @@ function HeaderSecondbar  () {
                     </div>
                 </div>
             </div>
+            <div className="mobile-nav">
+                <div className="ham">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>  
+                <div className="search">
+                    <Search />
+                </div>
+                <div className="empty">
+
+                </div>
+                <div className="cart">
+                    <Cart />
+                </div>
+                <div className="user">
+                    <User />
+                    <Down />
+                </div>
+            </div>            
         </Wrapper>
     )
 }
 
 
 const Wrapper = styled.div`
+    .mobile-nav {
+        display: none;
+    }
+
+    .second-bar {
+        display: block;
+    }
+
     --color: #F9DC38;
 
     font-family: 'Montserrat', sans-serif;
@@ -227,10 +255,76 @@ const Wrapper = styled.div`
                 }
             }
         }
-
-
     }
 
+
+    @media only screen and (max-width: 720px) {
+    min-height: 70px;
+
+    .mobile-nav {
+        height: 70px;
+        background-color: #F5F5F6;
+        gap: 10px;
+        display: none;
+    }
+
+    .cart {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        gap: 5px;     
+    }
+
+    .empty {
+        flex: 8;
+    }
+    .search {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search svg path{
+        fill: black;
+    }
+
+    .search svg {
+        transform: scale(1.5)
+    }
+    .mobile-nav {
+        display: flex;
+    }
+
+    .ham {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+
+        div {
+            height: 3px;
+            width: 20px;
+            margin-bottom: .2rem;
+            background-color: black;
+        }
+    }      
+    
+        .second-bar {
+            display: none ;
+        }
+    }
 `
 
 export default HeaderSecondbar

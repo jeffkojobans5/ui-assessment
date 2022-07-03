@@ -45,7 +45,6 @@ const Wrapper = styled.div`
         position: absolute;
         bottom: 4px;
         width: 100%;
-
     }
 
     .title {
@@ -67,6 +66,33 @@ const Wrapper = styled.div`
         background-color: #F9DC38;
     }
 
+
+    @media only screen and (max-width: 720px) {
+        height: 200px;
+
+        img {
+            object-fit: cover;
+            height: 200px;
+            }
+
+        .title-direction {
+            height: 30px; 
+
+            p {
+                font-size: .9rem;
+            }
+        }
+    
+        .otherCollections {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: auto auto;
+        }
+
+        .caption {
+            bottom: -1px;
+        }
+    }      
     
 
 `

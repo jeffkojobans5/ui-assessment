@@ -14,7 +14,7 @@ function Details () {
                         <p className="save"> Save 67% </p>
                     </div>  
                     <div className="fav">
-                        <p className="border-around"> <Fav className="fav-icon"/> Add to Favourites </p>
+                        <p className="border-around"> <Fav className="fav-icon"/> <span className="hide-on-mobile"> Add to Favourites </span> </p>
                     </div>
                 </div>
                     <div className="text-description">
@@ -91,7 +91,7 @@ function Details () {
                             </div>
                             <div className="number-field">
                                 {/* <p>  Select a patch <Down className="down-icon"/> </p> */}
-                                <input type="number" />
+                                <input type="number" placeholder="1" />
                             </div>
                         </div>
                     </div>
@@ -106,7 +106,6 @@ function Details () {
                         </div>                        
                     </div>
             </div>
-            
         </Wrapper>
     )
 }
@@ -288,14 +287,28 @@ const Wrapper = styled.div`
 
     .number-field {
         flex: 5;
-        // border: 1px solid #EAEAEC;
-        // padding: .5rem;
         input {
             padding: .6rem;
             border: 1px solid #EAEAEC;
             outline: none;
         }
     }    
+
+    @media only screen and (max-width: 720px) {
+        .details {
+            padding-left: 0rem !important;
+        }
+    }
+
+    @media only screen and (max-width: 520px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }    
+    
+    
+    
+
 `
 
 export default Details

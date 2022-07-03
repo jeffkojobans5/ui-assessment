@@ -32,6 +32,8 @@ const Wrapper = styled.div`
         height: auto;
         max-width: 60px;
     }
+
+ 
 `   
 
 export default InfoProps

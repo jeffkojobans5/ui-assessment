@@ -7,7 +7,9 @@ function CountryLeagueProps ( props ) {
     return (
         <Wrapper>
             <Link to="/">
-                <img src={ image } alt={ image } />
+                <div className="image">
+                    <img src={ image } alt={ image } />
+                </div>
                 <p> { league } </p> 
             </Link>            
         </Wrapper>
@@ -18,9 +20,6 @@ const Wrapper = styled.div`
     transition: 0.3s all;
     flex: 1;
 
-    img {
-        width: 100%;
-    }
     a {
         text-decoration: none;
     }
@@ -31,6 +30,7 @@ const Wrapper = styled.div`
         color: black;
         margin-top: 1rem;
     }
+
 
     :hover {
         transform: translateY(-10px)

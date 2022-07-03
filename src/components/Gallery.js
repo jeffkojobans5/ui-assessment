@@ -78,7 +78,6 @@ const Wrapper = styled.div`
 
     .big-image  {
         width: 100%;
-
         img {
             width: 100%;
         }
@@ -102,6 +101,27 @@ const Wrapper = styled.div`
         position : relative;
         top: -.4rem;
         margin-left: 2.6rem;
+    }
+
+    @media only screen and (max-width: 720px) {
+        .big-image  {
+            width: 100%;
+        }        
+
+        img {
+            height: auto;
+            max-width: 100%;
+        }  
+
+        .small-pics {
+            width: 100%;
+            overflow: scroll;
+            img {
+                height: auto;
+                max-width: 60px;
+            }
+        }
+
     }
 
 `

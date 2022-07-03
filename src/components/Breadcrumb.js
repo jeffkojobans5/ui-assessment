@@ -36,6 +36,13 @@ const Wrapper = styled.div`
         }
     }
 
+    @media only screen and (max-width: 720px) {
+        .sep {
+            margin: 0 0rem !important;
+        }
+    }    
+    
+
 `
 
 export default Breadcrumb

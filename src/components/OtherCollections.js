@@ -39,6 +39,21 @@ margin-top: 6rem;
     grid-gap: 20px;
     grid-template-columns: auto auto auto;
 }
+
+@media only screen and (max-width: 720px) {
+    .container h1 {
+       font-size: 1.5rem
+    }
+
+
+    .otherCollections {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: auto auto;
+    }
+
+    margin-bottom: 5rem;
+}    
 `
 
 export default OtherCollections

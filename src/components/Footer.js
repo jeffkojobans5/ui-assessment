@@ -44,7 +44,7 @@ function Footer  () {
                                 <span> <Send /> </span>
                         </div>
                     </div>                                        
-                    <div className="box follow">
+                    <div className="box  follow">
                         <h3> Follow Us </h3>
                         <div className="s-media">
                                 <div className="fb media"> <a href="#"> <Fb />  </a> </div>
@@ -63,7 +63,12 @@ function Footer  () {
                             <img src={ Partners } alt="partners" />
                         </div>
                     </div>
-                </div>            
+                </div>       
+                <div className="copyright-mobile">
+                    <div className="container">
+                            <p>© 2021 Jambulani  •  All rights reserved</p>
+                    </div>
+                </div>                     
         </Wrapper>
     )
 }
@@ -71,7 +76,7 @@ function Footer  () {
 const Wrapper = styled.div`
     font-family: 'Montserrat', sans-serif;
     background-color: #F5F5F6;
-    padding-top: 5rem;
+    padding-top: 2rem;
 
     .footer {
         display: flex;
@@ -88,13 +93,16 @@ const Wrapper = styled.div`
 
         .follow {
             flex: 2;
-            margin-left: 3rem;
+            margin-left: 5rem;
         }
-        .box {
-            
+        .box {            
             p { 
                 margin-top: 2rem;
                 line-height: 2rem;
+            }
+
+            h3 {
+                margin-top: 2.5rem;
             }
             ul {
                 margin-top: 2rem;
@@ -168,17 +176,13 @@ const Wrapper = styled.div`
         }         
     }
 
-    // .follow {
-    //     margin-left: 3rem;
-    // }
-
     .beneath-footer {
         border-top: 1px solid #EAEAEC;
     }
 
    .copyright-partners {
        display: flex;
-        align-items: center;
+       align-items: center;
 
        .copyright {
            flex: 1;
@@ -189,6 +193,46 @@ const Wrapper = styled.div`
        }
    }
 
+   .copyright-mobile {
+       display: none;
+   }
+
+   @media only screen and (max-width: 720px) {
+    .footer {
+        flex-direction: column;
+        justify-content: start;
+        padding-bottom: 0rem;
+    }
+
+    .follow {
+        margin-left: 0rem !important;
+    }  
+
+    .beneath-footer {
+        border-top: none;
+    }
+
+    .copyright-partners {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+ 
+        .copyright {
+            display: none;
+        }
+ 
+        .partners {
+            flex: 1;
+        }
+    }
+
+    .copyright-mobile {
+        display: block;
+        margin-top: 1.5rem;
+        border-top: 1px solid #EAEAEC;        
+    }
+}  
+}     
 `
 
 export default Footer

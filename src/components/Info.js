@@ -40,5 +40,13 @@ const Wrapper = styled.div`
     .rewards {
         margin-top: 1rem;
     }
+
+    @media only screen and (max-width: 720px) {
+        .container {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: auto auto;            
+        }
+    }       
 `
 export default Info

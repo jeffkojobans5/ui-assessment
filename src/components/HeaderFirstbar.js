@@ -19,7 +19,7 @@ function HeaderFirstbar  () {
                     </div>
                     <div className="chat">
                         <Whatsapp />
-                        <p> Chat with us </p>
+                        <p> Chat <span className="hide-on-phone">with us</span> </p>
                     </div>                    
                 </div>
             </div>
@@ -87,6 +87,21 @@ const Wrapper = styled.div`
             p {
                 margin: 0 .5rem;
             }
+        }
+    }
+
+    @media only screen and (max-width: 720px) {
+        .hide-on-phone {
+            display: none;
+        }
+
+        .sale p {
+            font-size: .8rem;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+        .chat {
+            padding: 0 0 0 1rem;
         }
     }
 

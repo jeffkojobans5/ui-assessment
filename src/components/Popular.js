@@ -79,7 +79,19 @@ const Wrapper = styled.div`
 
     .popular-shirts {
         display: flex;
+        overflow-x: visible;
         gap: 40px;
     }
+
+    @media only screen and (max-width: 720px) {
+        margin-top: 1rem !important;
+
+        .text h1 {
+            font-size: 1.5rem            
+        }
+
+        .text-slider-controller {
+            margin-bottom: 2rem;
+        }       
 `
 export default Popular

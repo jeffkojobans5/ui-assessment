@@ -7,7 +7,7 @@ function PopularProps () {
     
     return (
         <Wrapper>
-            <Link to="/">
+            <Link to="/product">
                 <img src={Lingard} alt="popular kits" />
                     <p className="save"> Save 67% </p>
                     <div className="caption">

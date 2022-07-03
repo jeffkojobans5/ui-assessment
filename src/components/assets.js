@@ -12,13 +12,13 @@ import { ReactComponent as Fb  }  from "../media/assets/icons/svg/facebook-f.svg
 import { ReactComponent as Tw  }  from "../media/assets/icons/svg/twitter.svg"
 import { ReactComponent as In  }  from "../media/assets/icons/svg/instagram.svg"
 import { ReactComponent as Fav  }  from "../media/assets/icons/svg/heart-outline.svg"
+import { ReactComponent as Bag  }  from "../media/assets/icons/svg/bag.svg"
 import  Lingard  from "../media/assets/images/product-medium.jpg"
 import  LingardLarge  from "../media/assets/images/product-large.jpg"
 import  LingardSmall  from "../media/assets/images/product-small.jpg"
 import  PersonalizationImg  from "../media/assets/images/personalization.jpg"
 import  Social  from "../media/assets/images/social-networks.jpg"
 import  Partners  from "../media/assets/images/payment-partners.png"
-
 
 
 export { 
@@ -41,5 +41,6 @@ export {
     Partners ,
     LingardLarge ,
     LingardSmall , 
-    Fav
+    Fav ,
+    Bag ,
 } 

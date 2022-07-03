@@ -86,6 +86,18 @@ const Wrapper = styled.div`
         background-color: white;
     }
 
+
+    @media only screen and (max-width: 720px) {
+        .container h1 {
+           font-size: 1.5rem
+        }
+
+
+        .per-social {
+            flex-direction: column;
+        }
+    }    
+
 `
 
 export default Personalization

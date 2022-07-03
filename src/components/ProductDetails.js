@@ -26,6 +26,12 @@ const Wrapper = styled.div`
    .reward {
        margin: 2rem 0rem 6rem 0rem;
    }
+ 
+   @media only screen and (max-width: 720px) {
+    .prod-container {
+        flex-direction: column;
+    }    
+}   
 `
 
 export default ProductDetails
