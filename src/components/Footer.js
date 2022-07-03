@@ -232,8 +232,8 @@ const Wrapper = styled.div`
         border-top: 1px solid #EAEAEC;        
     }
 
-    li , {
-        font-size: .9rem;
+    li , p {
+        font-size: .9rem !important;
     }
 }  
 }     
