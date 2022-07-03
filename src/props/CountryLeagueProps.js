@@ -18,10 +18,9 @@ function CountryLeagueProps ( props ) {
 
 const Wrapper = styled.div`
     transition: 0.3s all;
-    width: 20%;
-    padding: .5rem;
-    float: left;
-
+    flex: 1;
+    margin-bottom: 1rem;
+    
     a {
         text-decoration: none;
     }
@@ -43,7 +42,13 @@ const Wrapper = styled.div`
     }
 
     @media only screen and (max-width: 720px) {
-        width: 45%;
+        .image {
+            width: 150px;
+        }
+
+        p {
+            margin-top: .3rem !important;
+        }
     }
 `
 
