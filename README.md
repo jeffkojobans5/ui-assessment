@@ -1,28 +1,13 @@
-# UI Assessment
+# Framework
+React.js
 
-# Design file
-https://www.figma.com/file/fO9SrIq6PCQSoJ8iqT0A3O/Sample-UI?node-id=1%3A2
+# Main Dependencies
+React Router DOM
+Styled Components
 
-# Assets
-Icons and images are included in the assets folder of this repo
-
-# Objectives
-- Fork this repository.
-- Create a new branch in your Github username.
-- Build the user interface exaclty as seen in the design file linked above. Alignment, spacing and precision are key.
-- Have a least one product linked to the product description page.
-- No animation needed. Micro interaction animations would be a plus although not required.
-
-# Requirements
-- Web Framework: React, Vue, or Webflow
-- UI library: TailwindCSS, Boostrap, or Plain CSS/SCSS
-
-# Deadline
-48hrs after you've accepted the invite to the Figma file.
-
-If you've got any questions, you can drop it in the discussions panel and mention me (@pyplacca) in it.
-
-# Submission Instructions
-1. Send an email to notify about your completion for approval.
-2. Once approved, you will receive an email invitation to collaborate via Github.
-3. Accept the invitation and create a pull request for review.
+#Description
+1. In the components folder you will find all the components I used eg. Header, Footer, Banner etc. I did this to make the codes easier to maintain.
+2. The media folder contains pictures and icons. The public also contains some.
+3. I have the two main pages in the Pages folder.
+4. The Props folder contains my Props element.
+5. The Utils folder contains my constant file. In the constant file, I have objects which I consume data for the Frontend. eg. navLinks.
